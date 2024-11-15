@@ -3,65 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Lists</title>
-    <style>
-        /* Unordered list styling */
-        ul {
-            list-style-type: none; /* Remove default bullets */
-            padding: 0;
-        }
-        ul li {
-            padding: 5px;
-            font-size: 18px;
-        }
-        ul li.favorite {
-            color: red; /* Unique styling for favorite movie */
-            font-weight: bold;
-        }
-
-        /* Ordered list styling */
-        ol {
-            counter-reset: item;
-            list-style-type: none; /* Remove default numbering */
-            padding: 0;
-        }
-        ol li {
-            counter-increment: item;
-            padding: 5px;
-            font-size: 18px;
-        }
-        ol li::before {
-            content: counter(item) ". ";
-            font-weight: bold;
-            color: blue; /* Random styling for list items */
-        }
-        ol li:nth-child(odd) {
-            background-color: #f0f0f0; /* Different background for odd items */
-        }
-        ol li:nth-child(even) {
-            background-color: #e0e0e0; /* Different background for even items */
-        }
-    </style>
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Styled Lists</h1>
+    <div class="sidebar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <h2>Favorite Movies</h2>
-    <ul>
-        <li class="favorite">Inception</li>
-        <li>The Matrix</li>
-        <li>Interstellar</li>
-        <li>Parasite</li>
-        <li>Spirited Away</li>
-    </ul>
-
-    <h2>Cities to Visit</h2>
-    <ol>
-        <li>Tokyo</li>
-        <li>Paris</li>
-        <li>New York</li>
-        <li>London</li>
-        <li>Sydney</li>
-    </ol>
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content area.</p>
+    </div>
 </body>
 </html>
